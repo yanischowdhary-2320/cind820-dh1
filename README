@@ -1,0 +1,26 @@
+Census Income Prediction Project
+
+This project focuses on predicting whether an individual earns more than $50000 per year using the UCI census income
+datset. The goal in the project is to clean, preprocess and prepare the dataset for machine learning models. 
+
+The dataset contains demographic educational and occupational features that are relevant when it comes to income prediction
+Understanding these patterns will help provide insight into other socioeconomic factors. 
+
+
+Dataset : UCI Machine Learning Repository - Census Income (Adult) dataset
+Source : https://archive.ics.uci.edu/dataset/20/census+income
+Size : 48842 instances with 14 predictive features and 1 target variable. 
+The features include a mix of both numeric and categorical features.
+Numeric : age, education-num, capital-gain, capital-loss, hours-per-week
+Categorical : workclass, education, marital-status, occupation, relationship, race, sex, native-country. 
+Target Variable : Less than 50000 or More than 50000
+
+
+To be completed : 
+
+Exploratory Data Analysis (EDA) and visualization of demographic patterns.
+
+Modeling using baseline (Logistic Regression, Decision Tree) and advanced models (Random Forest)
+
+Feature importance analysis to identify key predictors of income.
+
