@@ -15,12 +15,56 @@ Numeric : age, education-num, capital-gain, capital-loss, hours-per-week
 Categorical : workclass, education, marital-status, occupation, relationship, race, sex, native-country. 
 Target Variable : Less than 50000 or More than 50000
 
+Data Preparation
 
-To be completed : 
+Data Cleaning: Replace or remove “?” entries to handle missing values.
+Also stripped whitespace, and removed punctuations. (Kohavi, 1996)
 
-Exploratory Data Analysis (EDA) and visualization of demographic patterns.
+Encoding: Apply One-Hot Encoding for categorical variables to avoid ordinal bias and retain interpretability. (Quinlan, 1996)
 
-Modeling using baseline (Logistic Regression, Decision Tree) and advanced models (Random Forest)
+Scaling: Standardized the numerical features using StandardScaler to normalize features, which was crucial for gradient-based algorithms. (Kotsantis, 2007)
 
-Feature importance analysis to identify key predictors of income.
+Balancing: Apply SMOTE (Synthetic Minority Oversampling Technique) to oversample the minority class (>50K). (Chawla, 2002)
+
+Splitting: Divide dataset into training (70%) and testing (30%) subsets used stratified sampling to preserve the class proportions. (Friendman, 2001)
+
+
+Exploratory Data Analysis : 
+Visualized the income distribution to show that 76% made <= 50K and 24% made >50K
+Identified correlations among the numeric features such as education level, age, and hours worked. 
+I used heatmaps and count plots to highlight trends between the demographic variables and income.
+
+The Model approach was use 
+Logistic Regression which is Linear and able to interperate the baseline for binary classification
+
+Decision Tree which his non-linear and captures interactions and relationships in the dataset
+
+Random Forest which is an ensemble method and combines multiple trees for improved accuracy. 
+
+Model Comparison:
+                     Accuracy  Precision    Recall  F1 Score
+Logistic Regression  0.761701   0.513102  0.751338  0.609777
+Random Forest        0.840127   0.678861  0.673409  0.676124
+Decision Tree        0.795460   0.579690  0.635039  0.606104
+
+Using the Random forest ensemble method I was also able to find the 10 most influential predictors when it came to income
+and they were as follows : 
+marital-status = 0.17
+age = 0.13
+relationship = 0.12
+fnlwgt = 0.11
+hours-per-week = 0.09
+education-num = 0.09
+education = 0.08
+capital-gain = 0.07
+occupation = 0.06
+workclass = 0.03
+
+Tools used: 
+Language	Python 3.10+
+Libraries	Pandas, NumPy, Matplotlib, Seaborn
+ML Frameworks	scikit-learn, imbalanced-learn
+Environment	Google Colab
+Data Source	UCI Machine Learning Repository: https://archive.ics.uci.edu/dataset/20/census+income
+
 
