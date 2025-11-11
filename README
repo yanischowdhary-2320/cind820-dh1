@@ -67,4 +67,26 @@ ML Frameworks	scikit-learn, imbalanced-learn
 Environment	Google Colab
 Data Source	UCI Machine Learning Repository: https://archive.ics.uci.edu/dataset/20/census+income
 
+References 
+
+Kohavi, R. (1996). Census Income [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5GP7S
+
+Kohavi, R. (1996). Scaling up the accuracy of naive-Bayes classifiers: a decision-tree hybrid. Proceedings of the Second International Conference on Knowledge Discovery and Data Mining (KDD), 202–207.
+
+
+Dua, D., & Graff, C. (2019). UCI Machine Learning Repository: Census Income Dataset. University of California, Irvine. Retrieved from https://archive.ics.uci.edu/dataset/20/census+income
+
+
+Kotsiantis, S. B. (2007). Supervised machine learning: A review of classification techniques. Informatica, 31(3), 249–268.
+
+
+Quinlan, J. R. (1996). Improved use of continuous attributes in C4.5. Journal of Artificial Intelligence Research, 4, 77–90.
+
+
+Friedman, J. H. (2001). Greedy function approximation: A gradient boosting machine. Annals of Statistics, 29(5), 1189–1232.
+
+
+Chawla, N. V., Bowyer, K. W., Hall, L. O., & Kegelmeyer, W. P. (2002). SMOTE: Synthetic Minority Over-sampling Technique. Journal of Artificial Intelligence Research, 16, 321–357.
+
+
 
